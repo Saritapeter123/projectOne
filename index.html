@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nom' Stop</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- geocoder mapbox plugin-->
+  <script
+    src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+  <!-- geocoder plugin stylesheet-->
+  <link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+    type="text/css" />
+  <!-- promise polyfill script required for IE 11-->
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="nomstop.png" id="brandLogo" alt="nomstop-logo"/>
+      </a>
+  </nav>
+
+  <div class=”main-container”>
+    <section id="filter" class="section">
+      <div class="container">
+        <h1 class="title is-1">
+          What's for <strong>Din Din</strong>?
+        </h1>
+        <p class="subtitle">
+          Can't decide? Choose your picks.
+        </p>
+
+        <!-- Filter 1 -->
+        <div class="select">
+          <select>
+            <option>Cuisine</option>
+            <option>American (New)</option>
+            <option>American (Traditional)</option>
+            <option>Chinese</option>
+            <option>French</option>
+            <option>Greek</option>
+            <option>Indian</option>
+            <option>Italian</option>
+            <option>Japanese</option>
+            <option>Korean</option>
+            <option>Latin American</option>
+            <option>Mexican</option>
+            <option>Thai</option>
+            <option>Vegetarian</option>
+            <option>Vegan</option>
+            <option>Vietnamese</option>
+          </select>
+        </div>
+
+        <!-- Filter 2 -->
+
+        <div class="select">
+          <select>
+            <option>Price</option>
+            <option>$</option>
+            <option>$$</option>
+            <option>$$$</option>
+            <option>$$$$</option>
+          </select>
+        </div>
+
+        <button class="button">Find Me A Restaurant!</button>
+
+        <img src="dinner.png" id="dinner" alt="couple having dinner" width="500" height="600"/>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Start Carousel -->
+        <div id="carousel-demo" class="carousel">
+          <div class="item-1">
+            <!-- Slide Content -->
+            <img src="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&w=1000&q=80"
+              alt="nomstop-logo" />
+          </div>
+          <div class="item-2">
+            <!-- Slide Content -->
+            <img
+              src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/beach_safety_covid_19_other/1800x1200_beach_safety_covid_19_other.jpg"
+              alt="nomstop-logo" />
+          </div>
+          <div class="item-3">
+            <img
+              src="https://visitoceanside.org/wp-content/uploads/2020/05/Pier-Lifeguard-Tower-Beach-Sunset-DSC00963-crop-small.jpg"
+              alt="nomstop-logo" />
+          </div>
+          <div class="item-4">
+            <img src="https://i.insider.com/5a1d9d513339b0b9008b46a5?width=1100&format=jpeg&auto=webp"
+              alt="nomstop-logo" />
+          </div>
+          <div class="item-4">
+            <img
+              src="https://www.gohawaii.com/sites/default/files/styles/image_gallery_bg_xl/public/hero-unit-images/Punaluu%20Black%20Sand%20Beach.jpg?itok=NApJ7p02"
+              alt="nomstop-logo" />
+          </div>
+        </div>
+        <!-- End Carousel -->
+      </div>
+    </section>
+
+    <div id='map' style='width: 100%; height: 400px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibGV2aW9zYWgiLCJhIjoiY2tjem9leW56MDRxYzJycTk1ZGk0OTR4bCJ9.rS29O6Tqd_ERfMhITzvNxg';
+      var map = new mapboxgl.Map({
+        container: '<your HTML element id>',
+        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+        center: [-122.335167, 47.608013], // starting position [lng, lat]
+        zoom: 10 // starting zoom
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 3
+      });
+    </script>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Made with &hearts;
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="yelp.js"></script>
+  <script src="mapbox.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
