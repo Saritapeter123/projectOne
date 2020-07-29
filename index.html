@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nom' Stop</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
@@ -47,22 +46,22 @@
         <!-- Filter 1 -->
         <div class="select">
           <select>
-            <option>Cuisine</option>
-            <option>American (New)</option>
-            <option>American (Traditional)</option>
-            <option>Chinese</option>
-            <option>French</option>
-            <option>Greek</option>
-            <option>Indian</option>
-            <option>Italian</option>
-            <option>Japanese</option>
-            <option>Korean</option>
-            <option>Latin American</option>
-            <option>Mexican</option>
-            <option>Thai</option>
-            <option>Vegetarian</option>
-            <option>Vegan</option>
-            <option>Vietnamese</option>
+            <option value=none>Cuisine</option>
+            <option value="American (New)">American (New)</option>
+            <option value="American (Traditional)">American (Traditional)</option>
+            <option value="Chinese">Chinese</option>
+            <option value="French">French</option>
+            <option value="Greek">Greek</option>
+            <option value="Indian">Indian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Latin American">Latin American</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Thai">Thai</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vietnamese">Vietnamese</option>
           </select>
         </div>
 
@@ -77,6 +76,20 @@
             <option>$$$$</option>
           </select>
         </div>
+
+        <!-- Filter 3 -->
+
+        <div class="select">
+          <select>
+            <option>Radius</option>
+            <option>< 1 mile</option>
+            <option>1-5 miles</option>
+            <option>5-10 miles</option>
+            <option>10-15 miles</option>
+            <option>> 15 miles</option>
+          </select>
+        </div>
+
 
         <button class="button">Find Me A Restaurant!</button>
 
@@ -120,23 +133,8 @@
     </section>
 
     <div id='map' style='width: 100%; height: 400px;'></div>
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoibGV2aW9zYWgiLCJhIjoiY2tjem9leW56MDRxYzJycTk1ZGk0OTR4bCJ9.rS29O6Tqd_ERfMhITzvNxg';
-      var map = new mapboxgl.Map({
-        container: '<your HTML element id>',
-        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-        center: [-122.335167, 47.608013], // starting position [lng, lat]
-        zoom: 10 // starting zoom
-      });
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-    <script>
-      bulmaCarousel.attach('#carousel-demo', {
-        slidesToScroll: 1,
-        slidesToShow: 3
-      });
-    </script>
 
     <footer class="footer">
       <div class="content has-text-centered">
@@ -147,7 +145,7 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
   <script src="yelp.js"></script>
   <script src="mapbox.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
