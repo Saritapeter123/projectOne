@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nom' Stop</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+          <select id="ddcuisine">
+            <option>Cuisine</option>
+            <option value="chinese">Chinese</option>
+            <option value="french">French</option>
+            <option value="greek">Greek</option>
+            <option value="indian">Indian</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="latin american">Latin American</option>
+            <option value="mexican">Mexican</option>
+            <option value="thai">Thai</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="vietnamese">Vietnamese</option>
+          </select>
+        <div></div>
+
+          <select id="ddprice">
+            <option>Price</option>
+            <option value="1">$</option>
+            <option value="2">$$</option>
+            <option value="3">$$$</option>
+            <option value="4">$$$$</option>
+          </select>
+
+          <select id="ddradius">
+            <option>Radius</option>
+            <option value="1"> 1 mile</option>
+            <option value="5"> 5 mile</option>
+            <option value="10"> 10 mile</option>
+            <option value="15"> 15 miles</option>
+          </select>
+        
+
+        <button id="submit">Submit</button>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="results">
+    
+                    </div>
+                </div>
+             </div>
+       </div>
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+          
+          <script src=“https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js”></script>
+
+
+
+  <script src="script.js"></script>
+  <script src="yelp.js"></script>
+  <script src="mapbox.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+// connect the dropdown options to our 
+// math.floor math.random 
