@@ -2,6 +2,20 @@
 
 We are the Wizards of Git and we wanted to create an app to simplify the life of people. Who hasn't been in the situation where you need to get dinner but you don’t know where to go? When you've tried all the restaurants in your neighborhood and end up ordering from the same place over and over again. That's why we created “Nom’Stop”, the app that chooses for you and makes picking dinner easy!
 
+## Deployment
+
+* Link to App: https://saritapeter123.github.io/projectOne/index.html
+* Link to Repo: https://github.com/Saritapeter123/projectOne
+
+## Demo Photo & Gif
+Photo of Homepage with Prompt: ![Screen Shot 2020-07-31 at 11 11 33 PM](https://user-images.githubusercontent.com/66030740/89096525-205bf100-d38c-11ea-8762-11ebb23dd461.png)
+
+Photo of Results 1: ![Screen Shot 2020-07-31 at 11 13 09 PM](https://user-images.githubusercontent.com/66030740/89096528-20f48780-d38c-11ea-87d7-e4eef4d98e99.png)
+
+Photo of Results 2: ![Screen Shot 2020-07-31 at 11 13 17 PM](https://user-images.githubusercontent.com/66030740/89096529-2225b480-d38c-11ea-8c36-830f2828a35e.png)
+
+Gif: ![Demo of App](https://github.com/Saritapeter123/projectOne/blob/master/Photos%20%26%20Gif/ezgif.com-video-to-gif.gif)
+
 ## User Story
 
 As an indecisive individual who loves trying out new foods, I want an app that will choose a restaurant for me so that I don’t have to decide. Being surrounded by a variety of options doesn’t make choosing one easy. Our motivation was to alleviate the frustration especially for couples and small groups when it comes to deciding where to eat.
