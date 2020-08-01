@@ -1,0 +1,47 @@
+.navbar {
+    background-color: rgb(246, 146, 122);
+}
+
+body {
+    background-color: lightgray;
+}
+
+#filter{
+    border-radius: 25px;
+    background:  rgb(246, 146, 122);
+    padding: 40px;
+    margin: 40px;
+    height: 650px;
+    
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+   }
+
+#dinner {
+    float: right;
+    position: relative;
+    top: 200px;
+}
+
+#results {
+    padding-bottom: 20px;
+}
+
+#fooder {
+    position: absolute;
+    /* margin-top: 80px; */
+    width: 100%;
+    font-size: 12px;
+    padding: 32px;
+   }
+
