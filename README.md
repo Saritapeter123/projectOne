@@ -51,6 +51,9 @@ Daniel Balderas: Front-End development & presentation creation
 Sarita Peter: Front-End development & presentation creation
 Michael Chang: Yelp Fusion API and assisted Conor in integrating/troubleshooting with the Yelp API
 
+[
+<img width="1038" alt="Screen Shot 2020-07-31 at 10 59 02 PM" src="https://user-images.githubusercontent.com/65620789/89095312-93139f00-d381-11ea-8e48-737395d85e79.png">
+](url)
 
 
 
