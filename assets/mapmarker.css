@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+}
+
+.marker {
+  border-radius: 50%;
+  border: 8px solid #F6917A;
+  width: 8px;
+  height: 8px;
+}
+
