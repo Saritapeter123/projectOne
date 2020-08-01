@@ -8,13 +8,21 @@ We are the Wizards of Git and we wanted to create an app to simplify the life of
 * Link to Repo: https://github.com/Saritapeter123/projectOne
 
 ## Demo Photo & Gif
-Photo of Homepage with Prompt: ![Screen Shot 2020-07-31 at 11 11 33 PM](https://user-images.githubusercontent.com/66030740/89096525-205bf100-d38c-11ea-8762-11ebb23dd461.png)
+Photo of Homepage with Prompt: 
 
-Photo of Results 1: ![Screen Shot 2020-07-31 at 11 13 09 PM](https://user-images.githubusercontent.com/66030740/89096528-20f48780-d38c-11ea-87d7-e4eef4d98e99.png)
+![Screen Shot 2020-07-31 at 11 11 33 PM](https://user-images.githubusercontent.com/66030740/89096525-205bf100-d38c-11ea-8762-11ebb23dd461.png)
 
-Photo of Results 2: ![Screen Shot 2020-07-31 at 11 13 17 PM](https://user-images.githubusercontent.com/66030740/89096529-2225b480-d38c-11ea-8c36-830f2828a35e.png)
+Photo of Results 1: 
 
-Gif: ![Demo of App](https://github.com/Saritapeter123/projectOne/blob/master/Photos%20%26%20Gif/ezgif.com-video-to-gif.gif)
+![Screen Shot 2020-07-31 at 11 13 09 PM](https://user-images.githubusercontent.com/66030740/89096528-20f48780-d38c-11ea-87d7-e4eef4d98e99.png)
+
+Photo of Results 2: 
+
+![Screen Shot 2020-07-31 at 11 13 17 PM](https://user-images.githubusercontent.com/66030740/89096529-2225b480-d38c-11ea-8c36-830f2828a35e.png)
+
+Gif: 
+
+![Demo of App](https://github.com/Saritapeter123/projectOne/blob/master/Photos%20%26%20Gif/ezgif.com-video-to-gif.gif)
 
 ## User Story
 
