@@ -1,0 +1,15 @@
+body {
+  
+    height: 100vh;
+  
+    /* background: linear-gradient(45deg, #007991 0%, #78ffd6 100%); */
+  }
+
+
+  .marker {
+    border-radius: 50%;
+    border: 8px solid #F6917A;
+    width: 8px;
+    height: 8px;
+  }
+
