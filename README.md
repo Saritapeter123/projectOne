@@ -40,13 +40,16 @@ Simply input what type of cuisine you want to eat, how much you want to pay, and
 * MapboxGL Libraries
 * Leaflet Libraries
 
-## Deployment
-
 ## Challenges & Successes Encountered
+Some of the challenges we encountered were utilizing a new CSS framework which was challenging because it was in a syntax that we were not used to. Learn how to utilize the APIs we picked was a challenge because we first had to figure out how to call them and how to navigate the various endpoints that each API had. Also, combining the two APIs were a challenge on their own because finding the proper way of storing and pulling the data between the two APIs involved concepts and ideas that we were not quite used to. Some of the successes were things like the randomizer feature, which basically involved parsing the return data from the Yelp API into an array and then into a Math.random function, which then spits out the randomized resturant. 
 
 ## Tasks and Roles
 
-
+Conor Maguire: Mapbox API and integration/troubleshooting with the Yelp API
+Jessica Feng: Front-End development & presentation creation
+Daniel Balderas: Front-End development & presentation creation
+Sarita Peter: Front-End development & presentation creation
+Michael Chang: Yelp Fusion API and assisted Conor in integrating/troubleshooting with the Yelp API
 
 
 
